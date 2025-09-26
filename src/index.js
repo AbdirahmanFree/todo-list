@@ -1,5 +1,6 @@
 import { Task } from "./task";
 import { Project } from "./project";
+import { Portfolio } from "./portfolio";
 import "./style.css";
 
 const myProject = new Project(
@@ -20,8 +21,4 @@ const task = new Task(
     false,
     myProject
 )
-console.log(myProject)
-myProject.addTask(task)
-console.log(myProject)
-myProject.deleteTask(task)
-console.log(myProject)
+

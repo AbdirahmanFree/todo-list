@@ -27,5 +27,23 @@ body{
     grid-template-rows: 2fr 15fr 1fr;
 }
 
+.sidebar-title {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #0A0B0A ;
+    align-items: center;
+}
 
 
+
+button {
+    background-color: #191B19;
+    border: none;
+    color: #F5F5F5;
+}
+
+#portfolio-btn {
+    padding: 5 10px;
+    font-size: 20px;
+    margin: 5px 0px 0px 5px;
+}

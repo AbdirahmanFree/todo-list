@@ -1,6 +1,6 @@
 import { Task } from "./task";
 class Project {
-    #tasks = [];
+    tasks = [];
     constructor(title, description, color, dueDate, priority, checked, notes ){
         this.title = title;
         this.description = description
@@ -12,16 +12,16 @@ class Project {
 
     }
     addTask(task){
-        this.#tasks.push(task);
+        this.tasks.push(task);
     }
     getTasks(){
-        return this.#tasks;
+        return this.tasks;
     }
 
     deleteTask(task){
-        for (let i = 0; i< this.#tasks.length; i++){
-            if(this.#tasks[i] == task) {
-                this.#tasks.splice(i,1)
+        for (let i = 0; i< this.tasks.length; i++){
+            if(this.tasks[i] == task) {
+                this.tasks.splice(i,1)
                 return
             }
         }
