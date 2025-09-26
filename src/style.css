@@ -57,14 +57,6 @@ button {
     z-index: -1;
     position: relative;
 }
-#projects button {
-    margin-top: 5px;
-    width: 20px;
-    height: 20px;
-    font-size: 18px;
-    color: #0A0B0A;
-    background-color: #77DD77;
-    text-align: center;
-    border-radius: 5px;
-    
+#portfolio-btn:active {
+  font-size: larger;
 }
