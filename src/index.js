@@ -22,3 +22,16 @@ const task = new Task(
     myProject
 )
 
+function toggleZIndex(){
+    let z = window.getComputedStyle(projects).zIndex
+    z== "1" ? projects.style.zIndex = "-1" : projects.style.zIndex = "1";
+    return
+}
+
+const projects = document.getElementById("projects");
+const portfolioBtn = document.getElementById("portfolio-btn")
+portfolioBtn.addEventListener("click", () => {
+    toggleZIndex()
+    console.log("hello")
+})
+
