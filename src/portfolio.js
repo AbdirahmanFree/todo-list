@@ -17,6 +17,10 @@ class Portfolio {
             }
         }
     }
+    
+    getProjects(){
+        return this.projects;
+    }
 
 
 }

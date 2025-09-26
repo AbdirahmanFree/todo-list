@@ -1,4 +1,5 @@
 import { Task } from "./task";
+import { createECard } from "./display";
 class Project {
     tasks = [];
     constructor(title, description, color, dueDate, priority, checked, notes ){
@@ -25,9 +26,16 @@ class Project {
                 return
             }
         }
-            
 
+            
     }
+    createCard(){
+        return createECard(this.title)
+    }
+    
+    
 }
+
+
 
 export { Project }

@@ -9,6 +9,10 @@ body{
     color: #F5F5F5;
 }
 
+input:focus {
+    outline: none;
+}
+
 
 .container {
     display: grid;
@@ -59,4 +63,42 @@ button {
 }
 #portfolio-btn:active {
   font-size: larger;
+}
+
+#portfolio-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+#user-name,#user-goal {
+    background-color: #0A0B0A;
+    color: #F5F5F5;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border: None;
+    text-decoration: none;
+    font-size: 20px
+}
+
+.entity-container {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: #000000 3px solid;
+    
+}
+
+.cross {
+    position: relative;
+    font-size: 20px;
 }
