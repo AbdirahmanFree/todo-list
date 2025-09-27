@@ -46,4 +46,5 @@ myPortfolio.addProject(myProject)
 for (const pj of myPortfolio.getProjects()){
     projects.appendChild(pj.createCard())
 }
+export {myPortfolio }
 
